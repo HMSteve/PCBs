@@ -2,6 +2,11 @@
 
 Ein universelles Sensor-Board fuer Projekte mit der AskSinPP Library mit einem ATMega1284P, wenn der Flash oder RAM des ATMega328P nicht mehr ausreicht. Das Board ist fuer Handloetung ausgelegt und passt in das [Camdenboss-Sensor-Wandgehaeuse CBRS01VWH](https://www.camdenboss.com/camden-boss/cbrs01vwh-room-sensor-enclosure%2c-size-1%2c-vented%2c-white%2c-86x86x25.5mm/c-23/p-23038).
 
+Die Gerber-Files werden bspw. von [JLCPCB](https://jlcpcb.com/) anstandslos verarbeitet.
+
+
+#### Prototyp
+
 ![vollstaendig bestueckt](Images/AskSinPP1284Board_bestueckt.png)
 
 ![mit vier Sensor-Boards](Images/AskSinPP1284Board_mitSensoren.png)
@@ -18,7 +23,7 @@ Ein universelles Sensor-Board fuer Projekte mit der AskSinPP Library mit einem A
 
 #### Bauteile
 
-- Die Gerber-Files werden bspw. von [JLCPCB](https://jlcpcb.com/) anstandslos verarbeitet.
+- CC1101 868MHz Modul (div. Versender)
 - Batteriehalter Goobay 48677
 - Wandlerelko 100uF/10V Kemet T494 Serie (Low ESR)
 - Speicherdrossel 10uH Murata LQH43CN100K03L
