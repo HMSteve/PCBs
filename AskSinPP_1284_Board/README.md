@@ -20,8 +20,11 @@ Ein universelles Sensor-Board fuer Projekte mit der AskSinPP Library mit einem A
 
 - Die Gerber-Files werden bspw. von [JLCPCB](https://jlcpcb.com/) anstandslos verarbeitet.
 - Batteriehalter Goobay 48677
-
-Stueckliste folgt...
+- Wandlerelko 100uF/10V Kemet T494 Serie (Low ESR)
+- Speicherdrossel 10uH Murata LQH43CN100K03L
+- Resonator Murata CSTCC 8MHz (EOL, aber noch gut erhaeltlich und gut zu loeten)
+- Taster SMD 3x6x2.5mm (div. Versender)
+- restliche Bauteile gemaess Schaltplan: Standard 0805
 
 
 #### Credits
