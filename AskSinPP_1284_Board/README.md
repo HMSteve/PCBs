@@ -48,26 +48,33 @@ Die Gerber-Files werden bspw. von [JLCPCB](https://jlcpcb.com/) anstandslos vera
 ## Softwareeinbindung
 
 Zunaechst sollte nach Auswahl und Config des 1284p ein passender Bootloader wie der MightyCore geflasht werden. Die Config in der Arduino-IDE sieht wie folgt aus:
-![MightyCore-URL](Images/BootloaderArduinoConfig.png).
-Falls noch nicht geschehen, muss  vorab in der Arduino IDE unter Voreinstellungen, zusaetzliche Boardverwalter-URLs, einmalig der Pfad hinterlegt werden, damit der 1284 auswaehlbar ist:
-![MightyCore-URL](Images/MightyCoreURL.png).
+
+![Arduino Board Config](Images/BootloaderArduinoConfig.png)
+
+Falls noch nicht geschehen, muss  vorab in der Arduino IDE unter Voreinstellungen, zusaetzliche Boardverwalter-URLs, einmalig der Pfad hinterlegt werden, damit der 1284p auswaehlbar ist:
+
+![MightyCore-URL](Images/MightyCoreURL.png)
+
 
 Im Sketch sind dann die passenden Pinzuordnungen vorzunehmen:
-
-  #define CC1101_CS_PIN       4
-  #define CC1101_GDO0_PIN     2
-  #define CC1101_SCK_PIN      7
-  #define CC1101_MOSI_PIN     5
-  #define CC1101_MISO_PIN     6
-  #define LED_PIN             14   //LEDs on PD6 (Arduino Pin 14) and PD7 (Arduino Pin 15)
-  #define LED_PIN2            15
-  #define CONFIG_BUTTON_PIN   13
-  #define CC1101_PWR_SW_PIN   27
+```
+#define CC1101_CS_PIN       4
+#define CC1101_GDO0_PIN     2
+#define CC1101_SCK_PIN      7
+#define CC1101_MOSI_PIN     5
+#define CC1101_MISO_PIN     6
+#define LED_PIN             14   //LEDs on PD6 (Arduino Pin 14) and PD7 (Arduino Pin 15)
+#define LED_PIN2            15
+#define CONFIG_BUTTON_PIN   13
+#define CC1101_PWR_SW_PIN   27
+```
 
 Wird die Abschaltung der CC1101-Versorgungsspannung mittels U3 genutzt, ist das Gate im Setup des Sketch Low zu ziehen:
 
+```
   pinMode(CC1101_PWR_SW_PIN, OUTPUT);
   digitalWrite (CC1101_PWR_SW_PIN, LOW);  
+```
 
 Man erkauft sich den zusaetzlichen BI-Schutz also durch einen erhoehten Ruhestrom durch R2. Da ein offenes Gate gelegentlich unerwuenschte Effekte produziert, ist die Bestueckung dieses Widerstandes jedoch zu empfehlen und 470k als vernuenftiger Kompromiss anzusehen.
 
