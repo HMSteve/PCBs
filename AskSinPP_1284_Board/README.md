@@ -11,7 +11,7 @@ Die Gerber-Files werden bspw. von [JLCPCB](https://jlcpcb.com/) anstandslos vera
 
 ![vollstaendig bestueckt](Images/AskSinPP1284Board_bestueckt.png)
 
-### Platine in Aktion als Testdevice BME680 vs. alternative Sensoren
+### Platine im Einsatz als Testdevice BME680 vs. alternative Sensoren
 
 ![mit vier Sensor-Boards](Images/AskSinPP1284Board_mitSensoren.png)
 
@@ -72,8 +72,10 @@ Im Sketch sind dann die passenden Pinzuordnungen vorzunehmen:
 Wird die Abschaltung der CC1101-Versorgungsspannung mittels U3 genutzt, ist das Gate im Setup des Sketch Low zu ziehen:
 
 ```
+void setup () {
   pinMode(CC1101_PWR_SW_PIN, OUTPUT);
   digitalWrite (CC1101_PWR_SW_PIN, LOW);  
+  ...
 ```
 
 Man erkauft sich den zusaetzlichen BI-Schutz also durch einen erhoehten Ruhestrom durch R2. Da ein offenes Gate gelegentlich unerwuenschte Effekte produziert, ist die Bestueckung dieses Widerstandes jedoch zu empfehlen und 470k als vernuenftiger Kompromiss anzusehen.
