@@ -9,7 +9,7 @@ Die Gerber-Files werden bspw. von [JLCPCB](https://jlcpcb.com/) anstandslos vera
 
 Hier eine Bestueckung mit den Optionen 1 - 3 unten, jedoch ohne Pinleisten fuer die I2C-Breakout-Boards und Pullups fuer die I2C-Leitungen sowie ohne R5, da der OneWire-Anschluss hier als Zaehlereingang fuer meinen Regenmesser genutzt wird.
 
-![AskSinPP Universal Board](Images/AskSinUniversalBoard.png)
+![AskSinPP Universal Board](Images/AskSinPPUniversalBoard.png)
 
 
 ## Features
