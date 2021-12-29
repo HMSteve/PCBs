@@ -1,0 +1,13 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,8.7.1*%
+%TF.CreationDate,2021-06-23T10:34:03Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,S G <reply01@stephanit.de>*%
+%TJ.B_ID,SHT31_Breakout_v1*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Thickness,1.570000*%
+%TJ.B_Size_X,11.200000*%
+%TJ.B_Size_Y,13.200000*%
+M02*
