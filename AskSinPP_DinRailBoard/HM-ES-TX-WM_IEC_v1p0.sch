@@ -20298,7 +20298,7 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:26201/1" value="100n"/>
 <part name="F1" library="SamacSys_Parts" deviceset="0679H1000-05" device="" value="F 250mA"/>
 <part name="J1" library="SamacSys_Parts" deviceset="CTB0502_6" device=""/>
-<part name="IC2" library="SamacSys_Parts" deviceset="MCP1700T-5002E_TT" device=""/>
+<part name="IC2" library="SamacSys_Parts" deviceset="MCP1700T-5002E_TT" device="" value="MCP1700T-3302E_TT"/>
 <part name="J2" library="SamacSys_Parts" deviceset="CTB0502_6" device=""/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805W" package3d_urn="urn:adsk.eagle:package:26060/1" value="3k3"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805W" package3d_urn="urn:adsk.eagle:package:26060/1" value="80k"/>
@@ -20338,7 +20338,10 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <instance part="C8" gate="G$1" x="-43.18" y="5.08"/>
 <instance part="F1" gate="G$1" x="220.98" y="76.2" rot="R90"/>
 <instance part="J1" gate="G$1" x="226.06" y="66.04"/>
-<instance part="IC2" gate="G$1" x="-63.5" y="96.52" rot="R180"/>
+<instance part="IC2" gate="G$1" x="-63.5" y="96.52" smashed="yes" rot="R180">
+<attribute name="NAME" x="-87.63" y="88.9" size="1.778" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="-64.77" y="106.68" size="1.778" layer="96" rot="R180" align="center-left"/>
+</instance>
 <instance part="J2" gate="G$1" x="73.66" y="-45.72"/>
 <instance part="R2" gate="G$1" x="119.38" y="91.44" rot="R90"/>
 <instance part="R5" gate="G$1" x="76.2" y="91.44" rot="R180"/>
